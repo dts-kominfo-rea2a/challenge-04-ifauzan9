@@ -16,10 +16,10 @@ const createDate = function (dates, position) {
 
   if (isNaN(position)) {
     epoch.sort();
-    return epoch;
+    return epoch.join("-");
   }
 
-  return epoch[position];
+  return epoch[position].toString();
 };
 
 // ! JANGAN DIMODIFIKASI
